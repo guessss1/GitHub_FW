@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cryptocurrency Exchange Rate</title>
+    <title>Курс обмена криптовалют</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Cryptocurrency Exchange Rate</h1>
+        <h1>Курс обмена криптовалют</h1>
         <form id="exchangeForm">
-            <label for="crypto">Choose a cryptocurrency:</label>
+            <label for="crypto">Выберите криптовалюту:</label>
             <select id="crypto">
                 <option value="bitcoin">Bitcoin</option>
                 <option value="ethereum">Ethereum</option>
@@ -18,19 +18,20 @@
                 <option value="cardano">Cardano</option>
             </select>
 
-            <label for="currency">Choose a currency:</label>
+            <label for="currency">Выберите валюту:</label>
             <select id="currency">
                 <option value="usd">USD</option>
                 <option value="eur">EUR</option>
                 <option value="rub">RUB</option>
+                <option value="cny">CNY</option>
             </select>
 
-            <button type="button" id="getRate">Get Rate</button>
+            <button type="button" id="getRate">Узнать курс</button>
         </form>
 
         <div id="result" class="result">
-            <h2>Exchange Rate</h2>
-            <p id="exchangeRate">Please select cryptocurrency and currency to see the rate.</p>
+            <h2>Результат обмена</h2>
+            <p id="exchangeRate">Выберите криптовалюту и валюту, чтобы узнать курс.</p>
         </div>
     </div>
     <script src="script.js"></script>
